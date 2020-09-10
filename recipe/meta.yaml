@@ -23,10 +23,10 @@ requirements:
     - python
     - numpy
     - scipy
-    - numba >= 0.51.2
-    - pocl >= 1.5 # [not osx]
-    - pyopencl >= 2020.2.1 # [not osx]
-    - meshio >= 4.1.1
+    - numba >=0.51.2
+    - pocl >=1.5  # [not osx]
+    - pyopencl >=2020.2.1  # [not osx]
+    - meshio >=4.1.1
     - plotly
     - gmsh
 
