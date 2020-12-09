@@ -9,7 +9,7 @@ source:
   url: https://github.com/bempp/bempp-cl/archive/v{{ version }}.tar.gz
   sha256: a874a1d01e041cac82e3684dc1c91a52f893dfca890b7bdda3faf97400f6fad3
 build:
-  number: 0
+  number: 1
   skip: True  # [py<38]
   skip: True  # [win]
   skip: True  # [linux32]
