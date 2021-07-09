@@ -38,7 +38,7 @@ about:
   home: https://github.com/bempp/bempp-cl
   license: MIT
   license_family: MIT
-  license_file: LICENSE.md
+  license_file: LICENSE
   summary: 'The Bempp-cl boundary element library.'
   description: |
       Bempp-cl is a an OpenCL based boundary element library for Python.
