@@ -24,7 +24,7 @@ requirements:
     - numpy
     - scipy
     - numba >=0.53.1
-    - pocl=1.5=hecece54_2  # [not osx]
+    - pocl =1.5=hecece54_2  # [not osx]
     - pyopencl >=2021.2.5  # [not osx]
     - meshio >=4.4.6
     - plotly
