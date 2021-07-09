@@ -1,5 +1,5 @@
 {% set name = "bempp-cl" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/bempp/bempp-cl/archive/v{{ version }}.tar.gz
-  sha256: a874a1d01e041cac82e3684dc1c91a52f893dfca890b7bdda3faf97400f6fad3
+  sha256: b0cc0383f25ba62caa23013e616c64b816fd5b63626bf737577ae34fd8f002c6
 build:
   number: 0
-  skip: True  # [py<38]
-  skip: True  # [win]
-  skip: True  # [linux32]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  skip: true  # [py<38]
+  skip: true  # [win]
+  skip: true  # [linux32]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -39,9 +39,9 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: 'The Bempp-cl boundary element library.'
+  summary: The Bempp-cl boundary element library.
   description: |
-      Bempp-cl is a an OpenCL based boundary element library for Python.
+    Bempp-cl is a an OpenCL based boundary element library for Python.
   dev_url: https://github.com/bempp/bempp-cl
 
 extra:
