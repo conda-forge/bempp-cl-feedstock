@@ -9,11 +9,11 @@ source:
   url: https://github.com/bempp/bempp-cl/archive/v{{ version }}.tar.gz
   sha256: f4a23f983fed485037767d262985cdab6307b4479239b9aef685cf3fe88e7e3b
 build:
-  number: 0
-  skip: true  # [py<38]
-  skip: true  # [win]
-  skip: true  # [linux32]
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  skip: True  # [py<38]
+  skip: True  # [win]
+  skip: True  # [linux32]
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -46,4 +46,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - mscroggs
     - tbetcke
