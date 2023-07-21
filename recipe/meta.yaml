@@ -1,5 +1,5 @@
 {% set name = "bempp-cl" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/bempp/bempp-cl/archive/v{{ version }}.tar.gz
-  sha256: f4a23f983fed485037767d262985cdab6307b4479239b9aef685cf3fe88e7e3b
+  sha256: 236a8e80cd012802625c76201c627ecb4f6ef93ec68ee32ac23e6857e0e2a33c
 build:
-  number: 2
-  skip: True  # [py<38]
-  skip: True  # [win]
-  skip: True  # [linux32]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  skip: true  # [py<38]
+  skip: true  # [win]
+  skip: true  # [linux32]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
