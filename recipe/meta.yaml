@@ -33,7 +33,7 @@ requirements:
 
 test:
   imports:
-    - bempp.api
+    - bempp_cl.api
 
 about:
   home: https://github.com/bempp/bempp-cl
